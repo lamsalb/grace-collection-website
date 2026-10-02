@@ -95,7 +95,7 @@ a:focus-visible, button:focus-visible{
   color: var(--paper-text);
 }
 
-.brand-mark{ width: 30px; height: 30px; color: var(--brass); flex: none; }
+.brand-mark{ width: 48px; height: 48px; color: var(--brass); flex: none; }
 
 .brand-name{
   font-family: var(--serif);
