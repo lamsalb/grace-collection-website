@@ -74,9 +74,9 @@ a:focus-visible, button:focus-visible{
   position: sticky;
   top: 0;
   z-index: 40;
-  background: var(--ink);
-  color: var(--paper-text);
-  border-bottom: 1px solid var(--line-on-ink);
+  background: #f8f8f5;
+  color: var(--ink-text);
+  border-bottom: 1px solid var(--line-on-paper);
 }
 
 .site-header .container{
@@ -92,10 +92,10 @@ a:focus-visible, button:focus-visible{
   align-items: center;
   gap: 0.6rem;
   text-decoration: none;
-  color: var(--paper-text);
+  color: var(--ink-text);
 }
 
-.brand-mark{ width: 48px; height: 48px; color: var(--brass); flex: none; }
+.brand-mark{ width: 48px; height: 48px; object-fit: contain; flex: none; }
 
 .brand-name{
   font-family: var(--serif);
@@ -111,7 +111,7 @@ a:focus-visible, button:focus-visible{
   font-style: normal;
   font-size: 0.66rem;
   letter-spacing: 0.04em;
-  color: var(--brass);
+  color: var(--brass-dim);
   margin-top: 0.1rem;
 }
 
@@ -125,22 +125,22 @@ nav.site-nav ul{
 nav.site-nav a{
   text-decoration: none;
   font-size: 0.95rem;
-  color: var(--paper-text);
+  color: var(--ink-text);
   padding: 0.3rem 0.05rem;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
-nav.site-nav a:hover{ border-color: var(--brass); }
+nav.site-nav a:hover{ border-color: var(--garnet); }
 nav.site-nav a[aria-current="page"]{
-  color: var(--brass);
-  border-color: var(--brass);
+  color: var(--garnet);
+  border-color: var(--garnet);
 }
 
 .nav-toggle{
   display: none;
   background: none;
-  border: 1px solid var(--line-on-ink);
-  color: var(--paper-text);
+  border: 1px solid var(--line-on-paper);
+  color: var(--ink-text);
   width: 42px; height: 38px;
   border-radius: 2px;
   cursor: pointer;
@@ -153,8 +153,8 @@ nav.site-nav a[aria-current="page"]{
   nav.site-nav{
     position: absolute;
     top: 100%; left: 0; right: 0;
-    background: var(--ink);
-    border-bottom: 1px solid var(--line-on-ink);
+    background: #f8f8f5;
+    border-bottom: 1px solid var(--line-on-paper);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.25s ease;
@@ -165,7 +165,7 @@ nav.site-nav a[aria-current="page"]{
     gap: 0;
     padding: 0.5rem var(--gutter) 1.2rem;
   }
-  nav.site-nav li{ border-top: 1px solid var(--line-on-ink); }
+  nav.site-nav li{ border-top: 1px solid var(--line-on-paper); }
   nav.site-nav li:first-child{ border-top: none; }
   nav.site-nav a{ display:block; padding: 0.85rem 0; border-bottom: none; }
   .nav-toggle{ display: inline-flex; }
