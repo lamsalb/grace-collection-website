@@ -74,7 +74,7 @@ a:focus-visible, button:focus-visible{
   position: sticky;
   top: 0;
   z-index: 40;
-  background: #f8f8f5;
+  background: var(--paper);
   color: var(--ink-text);
   border-bottom: 1px solid var(--line-on-paper);
 }
@@ -95,7 +95,7 @@ a:focus-visible, button:focus-visible{
   color: var(--ink-text);
 }
 
-.brand-mark{ width: 48px; height: 48px; object-fit: contain; flex: none; }
+.brand-mark{ width: 56px; height: 56px; object-fit: contain; flex: none; }
 
 .brand-name{
   font-family: var(--serif);
@@ -153,7 +153,7 @@ nav.site-nav a[aria-current="page"]{
   nav.site-nav{
     position: absolute;
     top: 100%; left: 0; right: 0;
-    background: #f8f8f5;
+    background: var(--paper);
     border-bottom: 1px solid var(--line-on-paper);
     max-height: 0;
     overflow: hidden;
